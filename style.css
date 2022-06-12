@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: monospace, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+div.background {
+    width: calc(100vw - 30px - 28vw);
+    height: 100vh;
+    color: rgba(0,0,0,0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("assets/images/wallpaper.jpg");
+}
+
+div.login {
+    margin-right: 30px;
+    width: 28%;
+}
+
+div.login div#center-img {
+    width: 140px;
+    margin: 80px auto;
+}
+
+div.login img#riot-logo {
+    width: 140px;
+}
+
+div.login h1#title {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+div.login div.center-email {
+    width: calc(25vw - 140px);
+    margin: 0 auto;
+}
+
+div.login input.first-email {
+    margin-bottom: 20px;
+}
+
+div.login input.secund-email {
+    margin-bottom: 55px;
+}
+
+div.login input#email {
+    background-color: #EDECED;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0);
+    width: calc(25vw - 140px);
+    height: 40px;
+}
+
+div.login input#email:hover {
+    border-color: black;
+}
+
+#email::-webkit-input-placeholder {
+    font-family: monospace;
+    font-weight: bolder;
+    padding-left: 12px;
+    color: rgb(159, 159, 159);
+}
+
+div.login div.redes-sociais {
+    width: 19vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+
+div.login div.redes-sociais img {
+    width: 28px;
+}
+
+#facebook {
+    width: 31%;
+    border-radius: 6px;
+    background-color: #1778F2;
+}
+
+#google {
+    width: 31%;
+    border-radius: 6px;
+    background-color: #EDECED;
+}
+
+#apple {
+    width: 31%;
+    border-radius: 6px;
+    background-color: black;
+}
+
+.center-rs {
+    width: 28px;
+    margin: auto;
+}
+
+div.manter-login {
+    margin-left: 29px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.manter-login div#first-ml {
+    padding-top: 15px;
+    margin-right: 8px;
+    margin-left: 62px;
+}
+
+div.manter-login div#second-ml {
+    font-size: 10px
+}
+
+div.contas  {
+    margin: 200px auto;
+}
+
+div.contas button {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.contas button img {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+div.contas h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #A1A0A1;
+}
+
+@media only screen and (max-width: 1200px) {
+    div.login {
+        width: 40%;
+    }
+    
+    div.login input#email {
+        width: calc(40vw - 140px);
+    }
+
+    div.login div.center-email {
+        width: calc(40vw - 140px);
+    }
+
+    div.manter-login {
+        margin-left: 29px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    div.background {
+        background-size: 0px;
+        width: 0;
+    }
+        
+    div.login {
+        margin: 0;
+        width: 100vw;
+    }
+
+    div.login input#email {
+        width: 90vw;
+    }
+
+    div.login div.center-email {
+        width: calc(100vw - 55px);
+        margin: 0 auto;
+    }
+
+    div.login div.redes-sociais {
+        width: 80vw;
+    }
+
+    div.manter-login {
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.contas {
+        margin: 50px auto;    
+    }
+}
